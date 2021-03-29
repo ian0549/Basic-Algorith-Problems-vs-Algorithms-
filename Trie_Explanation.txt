@@ -1,0 +1,7 @@
+Building A Trie in Python.ipynb
+
+In this notbook we built a Trie class using python's defaultdict module.
+the Trie class has insert, find, and suffixes which uses a recursive helper function to return a list of all complet words with the given prefix.
+
+The tiem complexity of the Trie class is O(n) where n is the length of a search string
+The space complexity is O(n * m * b) where n is alpabet size, m is the length of the key and b is the numer of keys in the Trie 

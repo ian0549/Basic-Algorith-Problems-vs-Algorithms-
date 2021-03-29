@@ -1,0 +1,18 @@
+Square Root of an Integer
+
+Find the square root of the integer without using any Python library. 
+You have to find the floor value of the square root.
+For example if the given number is 16, then the answer would be 4.
+If the given number is 27, the answer would be 5 because sqrt(5) = 5.196 whose floor value is 5.
+Expected Algorithm Efficiency
+The expected time complexity is O(log(n))
+The space complexity is O(1).
+
+We made an absolute divided of the number by 2 to get a middle bisection.
+
+We recomputed the square using the mid values  and comapred to the actual integer.
+if it matches then, we return the mid value. Else, we recurse the function using the mid value if it is greater or less than the integer. 
+To obtai the floor value we used //1.0 to method in python as a division operator.
+
+Just as a binary search has time complexity O(log(n)), so does this bisection method. 
+Since the program uses the same small set of variables the space complexity is O(1).

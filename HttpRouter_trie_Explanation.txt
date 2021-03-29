@@ -1,0 +1,18 @@
+HTTPRouter using a Trie
+For this exercise we are going to implement an HTTPRouter like you would find in a typical web server using the Trie data structure we learned previously.
+
+There are many different implementations of HTTP Routers such as regular expressions or simple string matching, 
+but the Trie is an excellent and very efficient data structure for this purpose.
+
+The purpose of an HTTP Router is to take a URL path like "/", "/about", or "/blog/2019-01-15/my-awesome-blog-post" and figure out what content to return. 
+In a dynamic web server, the content will often come from a block of code called a handler.
+
+The algorithm uses a Trie data structure to build a framework for a HTTP Router with response handlers in the form of strings. 
+The key data structure used in the Trie here is a Python defaultdict module. 
+The dictionary contains keys which link to a nodes descendant nodes. 
+
+For the RouteTrie node, the time and space complexity is O(1), this is because the inser metho always inset a single node to the Trie.
+For the RouteTrie, the insert method has a time and space complexity of O(n) where n is the path list in the url. 
+The find method has a time complexity of O(n)
+
+For the Router, the add handler methos has a time and space compleity of O(n)

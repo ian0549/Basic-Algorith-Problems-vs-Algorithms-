@@ -1,0 +1,10 @@
+Dutch National Flag Problem
+Given an input array consisting on only 0, 1, and 2, sort the array in a single traversal. 
+No use of any sorting function that Python provides is allowed.
+
+
+We implemented the same algorithm in Uacity lesson 2: Sort 0,1,2 to sort the elements in the list
+
+This sorting is accomplished in a single pass and has therefore time complexity O(n).
+Since the same number variables are used, independent of the input array, the space complexity is O(1).
+
